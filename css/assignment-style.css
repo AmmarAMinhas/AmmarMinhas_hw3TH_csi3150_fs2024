@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Prociono&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Prociono", sans-serif, Tahoma;
+    /* set variables for colors */
+    --font-color-primary: #f1eeee;
+    --font-color-secondary: #ffd12d;
+    --backup-color: #000000;
+    font-size: 1vw;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.hero {
+    background-image: url(../assets/img/bg-hero.jpg);
+    width: 100vw;  /* To cover entirety of available width of the screen */
+    height: 100vh; /* To cover entirety of available height of the screen */
+    background-size: cover; /* This makes the background (in this case image) scaled to cover the available space */
+}
+
+.hero .heading {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--font-color-primary);
+}
+
+.hero .heading img {
+    width: 7rem;
+    height: 7rem;
+    margin-top: 50px;
+}
+
+.hero .heading :nth-child(2) {
+    margin-top: -30px;
+    font-size: 1.2rem;
+}
+
+.hero .heading :nth-child(3) {
+    margin-top: -10px;
+    font-size: 2.5rem;
+}
+
+.hero h1 {
+    margin-top: 110px;
+    color: var(--font-color-secondary);
+    font-size: 12rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.hero h4 {
+    color: var(--font-color-primary);
+    font-size: 1.35rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hero .wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.hero .wrapper i {
+    color: var(--font-color-secondary);
+    font-size: 7rem;
+    transition: transform 0.3s ease;
+}
+
+.intro {
+    background-image: url(../assets/img/bg-intro.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    padding-top: 125px;
+}
+
+
+.intro .left-col {
+    flex: 1;
+    padding-left: 100px;
+    padding-right: 200px;
+}
+
+.intro .left-col p {
+    color: var(--font-color-secondary);
+    font-size: 6rem;
+}
+
+.intro .right-col {
+    flex: 1.5;
+    padding-right: 100px;
+}
+
+.intro .right-col p {
+    color: var(--font-color-primary);
+    font-size: 1.25rem;
+    padding-top: 30px;
+}
+
+.intro .right-col .read-more-btn {
+    margin-top: 30px;
+}
+
+.read-more-btn {
+    background: var(--font-color-secondary);
+    width: 7.75rem;
+    height: 2.5rem;
+    border: 0.5px solid var(--backup-color);
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.read-more-btn:hover {
+    background: var(--font-color-primary);
+    font-size: 1.04rem;
+}
+
+.activities {
+    background-image: url(../assets/img/bg-activities.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding-top: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.activities h2 {
+    color: var(--font-color-secondary);
+    font-weight: 300;
+    font-size: 3.75rem;
+}
+
+.activities .pics {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.activities .wrapper {
+    width: 20vw;
+    height: 54vh;
+    margin-top: 40px;
+    margin-bottom: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.activities img {
+    width: 20vw;
+    height: 54vh;
+    object-fit: cover;
+}
+
+.activities i {
+    color: var(--font-color-secondary);
+    font-size: 5rem;
+    position: absolute;
+    top: 80%;
+    left: 2%;
+}
+
+.recommendations {
+    background-image: url(../assets/img/bg-recommendations.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    padding-top: 100px;
+}
+
+.recommendations .left-col {
+    flex: 1.25;
+    padding-left: 100px;
+    padding-right: 200px;
+}
+
+.recommendations .left-col p {
+    color: var(--font-color-secondary);
+    font-size: 5rem;
+}
+
+.recommendations .right-col {
+    flex: 1;
+    padding-right: 100px;
+}
+
+.recommendations .right-col p {
+    color: var(--font-color-primary);
+    padding-top: 25px;
+    padding-left: 25px;
+}
+
+.recommendations .right-col .subheading {
+    font-size: 1.8rem;
+}
+
+.recommendations .right-col .para {
+    font-size: 1.15rem;
+}
+
+.stats {
+    background-image: url(../assets/img/bg-stats.jpg);
+    width: 100vw;
+    height: 70vh;
+    background-size: cover;
+    background-position-y: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.stats .wrapper {
+    background: var(--backup-color);
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stats .wrapper .number {
+    color: var(--font-color-secondary);
+    font-size: 5rem;
+    margin-top: -1.75rem;
+}
+
+.stats .wrapper .data {
+    color: var(--font-color-primary);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    padding-top: 0.5rem;
+}
+
+.author-info {
+    background-image: url(../assets/img/bg-author-info.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position-y: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-direction: column;
+    padding: 0 20%;
+}
+
+.author-info .bx-game {
+    font-size: 7rem;
+    color: var(--font-color-secondary);
+    background: var(--backup-color);
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.author-info p {
+    font-size: 1.3rem;
+    color: var(--font-color-primary);
+    text-align: center;
+}
+
+.author-info .bx-chevron-down {
+    color: var(--font-color-secondary);
+    font-size: 6.5rem;
+    margin-top: -2.5rem;
+}
+
+.gallery {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.gallery img {
+    min-width: 25%;
+    max-width: 25%;
+    min-height: 100%;
+    max-height: 100%;
+    z-index: 1;
+  }
+
+.gallery .bx-chevron-left, .bx-chevron-right {
+    color: var(--font-color-secondary);
+    font-size: 6.5rem;
+    z-index: 2;
+    position: absolute;
+    margin-top: 35vh;
+}
+
+.gallery .bx-chevron-right {
+    margin-left: 92vw;
+}
+
+
+footer {
+    background-image: url(../assets/img/bg-footer.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position-y: 65%;
+    display: flex;
+    padding: 7.5rem 8rem;
+}
+
+footer .left-col {
+    flex: 1;
+}
+
+footer .left-col p {
+    color: var(--font-color-secondary);
+    font-size: 6rem;
+}
+
+footer .left-col .contact-info {
+    padding-top: 2rem;
+    padding-left: 1rem;
+    display: block;
+    flex-direction: column;
+    list-style: none;
+}
+
+footer .left-col .contact-info li {
+    color: var(--font-color-primary);
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+footer .left-col .social-icons {
+    padding-top: 2.5rem;
+    padding-left: 1rem;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+footer .left-col .social-icons li {
+    color: var(--font-color-secondary);
+    background: var(--backup-color);
+    padding: 0.75rem;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+footer .left-col .social-icons li:hover {
+    transform: scale(1.1);
+}
+
+footer .left-col .social-icons li i {
+    font-size: 2.2rem;
+}
+
+footer .right-col {
+    flex: 1;
+}
+
+footer .right-col form {
+    padding-top: 1rem;
+}
+
+footer .right-col form input {
+    display: block;
+    margin-top: 0.8rem;
+    background: transparent;
+    border: 2px solid #f1eeeea1;
+    color: var(--font-color-primary);
+    padding: 0.5rem;
+    width: 32rem;
+    height: 2.2rem;
+}
+
+footer .right-col form textarea {
+    display: block;
+    margin-top: 0.8rem;
+    background: transparent;
+    border: 2px solid #f1eeeea1;
+    color: var(--font-color-primary);
+    padding: 0.5rem;
+    width: 32rem;
+    height: 8rem;
+    resize: none;
+}
+
+
+footer .right-col form input::placeholder, textarea::placeholder {
+    color: #f1eeeee7;
+    opacity: 0.6;
+}
+
+footer .right-col form button {
+    margin-top: 0.8rem;
+}
+
+body .bx-chevron-down, .bx-chevron-left, .bx-chevron-right {
+    transition: color 0.3s ease;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+body .bx-chevron-down:hover, .bx-chevron-left:hover, .bx-chevron-right:hover {
+    color: var(--font-color-primary);
+    transform: scale(1.1);
+}
